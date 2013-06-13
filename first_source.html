@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>»ö±ò¹Ù²Ù±â</title>
+  <style>
+  	div{width:80pxl height:80px;
+	margin:3px float:left;}
+	div#red{background:#f00;}
+	div#green{background:#0f0;}
+	div#blue{background:#00f;}
+  </style>
+  <script src="http://code.jquery.com/jquery-1.7.js"></script>
+  <script type="text/javascript">
+  	$(function(){
+		$("div#red").click(function(){
+			$(this).fadeTo("slow", 1);
+			});
+		$("div#green").click(function(){
+			$(this).fadeTo("slow", 0.5);
+			});
+		$("div#blue").click(function(){
+			$(this).fadeTo("slow", 0);
+			});
+		});
+  </script>
+  </head>
+  <body>
+  	<div id="red"></div>
+	<div id="green"></div>
+	<div id="blue"></div>
+  </body>
+</html>
+
