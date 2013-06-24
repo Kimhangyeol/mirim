@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+.reverse{background:yellow; color:white;}
+</style>
+<script src="http:code.jquery.com/jquery-1.7.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('h1').bind({
+      mouseenter:function(){$(this).addClass('reverse');},
+      mouseleave:function(){$(this).removeClass('reverse');}
+      });
+
+      $('h1').bind('click', function(){
+      $(this).html(function(index, html){
+      return html+'+';
+      });
+     });
+    });
+
+</script>
+</head>
+<body>
+   <h1>ddddddd</h1>
+   <h1>dddaaaa</h1>
+   <h1>ddsssss</h1>
+
+</body>
+</html>
