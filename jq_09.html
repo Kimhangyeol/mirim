@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+	.menu{ border:1px solid #eeeeee; padding:5px; float:left;
+	width:100px; text-align:center; margin-right:-1px; cursor:pointer; }
+	.menu_on{ background-color:#99cc00; font-weight:bold; }
+</style>
+<script src="http://code.jquery.com/jquery-1.9.js"></script>
+<script>
+$(document).ready(function(){
+$(".menu").mouseover(function(){
+	$(this).addClass("menu_on");
+	});
+$(".menu").mouseout(function(){
+	$(this).removeClass("menu_on");
+	});
+});
